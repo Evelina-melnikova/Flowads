@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FlowAds — агентство по продвижению в Яндекс.Картах. SEO-продвижение карточки, работа с отзывами, вывод в ТОП.">
+<meta property="og:title" content="FlowAds — Продвижение в Яндекс.Картах">
+<meta property="og:description" content="Увеличиваем поток клиентов через SEO-продвижение карточки, работу с отзывами и оптимизацию профиля.">
+<meta property="og:image" content="images/og-image.svg">
+<meta property="og:type" content="website">
+<title>FlowAds — Продвижение в Яндекс.Картах</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ── AMBIENT BACKGROUND ── -->
+<div class="bg-canvas" aria-hidden="true">
+  <div class="dot-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="orb orb-4"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" aria-hidden="true">
+    <!-- decorative rings -->
+    <circle cx="96%" cy="180" r="280" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <circle cx="96%" cy="180" r="180" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="96%" cy="180" r="90"  fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="4%"  cy="72vh" r="240" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="4%"  cy="72vh" r="140" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="70%" cy="130vh" r="300" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="70%" cy="130vh" r="180" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    <circle cx="8%"  cy="190vh" r="260" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="8%"  cy="190vh" r="150" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    <!-- diagonal dashed lines -->
+    <line x1="-40" y1="18%" x2="28%" y2="8%"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="8 16"/>
+    <line x1="100%" y1="32%" x2="68%" y2="42%" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="8 16"/>
+    <line x1="-40" y1="58%" x2="24%" y2="68%"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="8 16"/>
+    <line x1="100%" y1="80%" x2="72%" y2="90%" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="8 16"/>
+    <!-- hotspot dots -->
+    <circle cx="24%" cy="28%" r="3" fill="rgba(139,92,246,0.6)"/>
+    <circle cx="24%" cy="28%" r="18" fill="rgba(139,92,246,0.1)"/>
+    <circle cx="78%" cy="52%" r="3" fill="rgba(59,130,246,0.6)"/>
+    <circle cx="78%" cy="52%" r="18" fill="rgba(59,130,246,0.1)"/>
+    <circle cx="14%" cy="78%" r="3" fill="rgba(139,92,246,0.5)"/>
+    <circle cx="14%" cy="78%" r="16" fill="rgba(139,92,246,0.09)"/>
+    <circle cx="88%" cy="110vh" r="3" fill="rgba(59,130,246,0.5)"/>
+    <circle cx="88%" cy="110vh" r="16" fill="rgba(59,130,246,0.09)"/>
+    <!-- map pin icons scattered -->
+    <g opacity="0.18" transform="translate(88,420) scale(0.9)"><path d="M11 0C4.925 0 0 4.925 0 11c0 7.5 11 19 11 19s11-11.5 11-19C22 4.925 17.075 0 11 0zm0 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="white"/></g>
+    <g opacity="0.14" transform="translate(1340,320) scale(1.1)"><path d="M11 0C4.925 0 0 4.925 0 11c0 7.5 11 19 11 19s11-11.5 11-19C22 4.925 17.075 0 11 0zm0 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="white"/></g>
+    <g opacity="0.12" transform="translate(1200,750) scale(0.8)"><path d="M11 0C4.925 0 0 4.925 0 11c0 7.5 11 19 11 19s11-11.5 11-19C22 4.925 17.075 0 11 0zm0 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="white"/></g>
+    <g opacity="0.13" transform="translate(60,950) scale(1.0)"><path d="M11 0C4.925 0 0 4.925 0 11c0 7.5 11 19 11 19s11-11.5 11-19C22 4.925 17.075 0 11 0zm0 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="white"/></g>
+  </svg>
+</div>
+
+<!-- ── MOBILE NAV ── -->
+<div class="mobile-nav" id="mobileNav">
+  <span class="mobile-nav-close" onclick="closeMobileNav()">✕</span>
+  <a href="#about" onclick="closeMobileNav()">О нас</a>
+  <a href="#services" onclick="closeMobileNav()">Услуги</a>
+  <a href="#pricing" onclick="closeMobileNav()">Тарифы</a>
+  <a href="#cases" onclick="closeMobileNav()">Кейсы</a>
+  <a href="#reviews" onclick="closeMobileNav()">Отзывы</a>
+  <a href="#contact" onclick="closeMobileNav()">Контакты</a>
+  <a href="#lead" class="btn btn-primary" onclick="closeMobileNav()">Оставить заявку</a>
+</div>
+
+<!-- ═══════════════════════════════════════
+     HEADER
+═══════════════════════════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">F</div>
+      <div class="logo-text">
+        <span class="logo-name">FlowAds</span>
+        <span class="logo-tagline">Продвижение в Яндекс.Картах</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="header-right">
+      <span class="header-phone">+7 (999) 123-45-67</span>
+      <a href="#lead" class="btn btn-primary btn-header-cta" style="padding:10px 20px;font-size:14px">Оставить заявку</a>
+      <div class="burger" onclick="openMobileNav()" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section class="hero" id="about">
+  <div class="container">
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left reveal">
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          Агентство №1 по продвижению в Яндекс.Картах
+        </div>
+        <h1 class="hero-h1">
+          Выводим компании<br>
+          в топ <span class="grad-text">Яндекс.Карт</span>
+        </h1>
+        <p class="hero-desc">Увеличиваем поток клиентов через SEO-продвижение карточки, работу с отзывами и оптимизацию профиля.</p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-val">30+</span><span class="stat-lbl">проектов</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-val">до +200%</span><span class="stat-lbl">просмотров</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-val">до 70%</span><span class="stat-lbl">рост заявок</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-val">ТОП-3</span><span class="stat-lbl">в нише</span></div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#lead" class="btn btn-primary">Получить бесплатный аудит</a>
+          <a href="#cases" class="btn btn-outline">Смотреть кейсы</a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-right reveal" style="transition-delay:.15s">
+
+        <!-- BIG BACKGROUND MAP -->
+        <div class="hero-map-bg">
+          <div class="hero-map-bg-inner"></div>
+          <!-- street grid -->
+          <div class="hero-map-bg-streets">
+            <div class="hms" style="height:1px;top:52px"></div>
+            <div class="hms w2" style="height:2px;top:118px"></div>
+            <div class="hms" style="height:1px;top:192px"></div>
+            <div class="hms w2" style="height:2px;top:268px"></div>
+            <div class="hms" style="height:1px;top:338px"></div>
+            <div class="hms w2" style="height:2px;top:408px"></div>
+            <div class="hms" style="height:1px;top:470px"></div>
+            <div class="hmv" style="width:1px;left:64px"></div>
+            <div class="hmv w2" style="width:2px;left:152px"></div>
+            <div class="hmv" style="width:1px;left:248px"></div>
+            <div class="hmv w2" style="width:2px;left:348px"></div>
+            <div class="hmv" style="width:1px;left:450px"></div>
+            <div class="hmv w2" style="width:2px;left:540px"></div>
+          </div>
+          <!-- city blocks -->
+          <div class="hero-map-bg-blocks">
+            <div class="hmb" style="left:8px;top:60px;width:46px;height:50px"></div>
+            <div class="hmb" style="left:72px;top:60px;width:70px;height:50px"></div>
+            <div class="hmb" style="left:160px;top:8px;width:78px;height:102px"></div>
+            <div class="hmb" style="left:256px;top:60px;width:82px;height:50px"></div>
+            <div class="hmb" style="left:356px;top:8px;width:82px;height:102px"></div>
+            <div class="hmb" style="left:456px;top:60px;width:90px;height:50px"></div>
+            <div class="hmb" style="left:8px;top:126px;width:46px;height:58px"></div>
+            <div class="hmb" style="left:72px;top:126px;width:70px;height:58px"></div>
+            <div class="hmb" style="left:160px;top:126px;width:78px;height:58px"></div>
+            <div class="hmb" style="left:256px;top:126px;width:82px;height:58px"></div>
+            <div class="hmb" style="left:356px;top:126px;width:82px;height:58px"></div>
+            <div class="hmb" style="left:456px;top:126px;width:90px;height:58px"></div>
+            <div class="hmb" style="left:8px;top:200px;width:46px;height:58px"></div>
+            <div class="hmb" style="left:72px;top:200px;width:70px;height:60px"></div>
+            <div class="hmb" style="left:160px;top:200px;width:78px;height:60px"></div>
+            <div class="hmb" style="left:256px;top:200px;width:82px;height:60px"></div>
+            <div class="hmb" style="left:356px;top:200px;width:82px;height:60px"></div>
+            <div class="hmb" style="left:456px;top:200px;width:90px;height:60px"></div>
+            <div class="hmb" style="left:8px;top:276px;width:46px;height:54px"></div>
+            <div class="hmb" style="left:72px;top:276px;width:70px;height:54px"></div>
+            <div class="hmb" style="left:160px;top:276px;width:78px;height:54px"></div>
+            <div class="hmb" style="left:256px;top:276px;width:82px;height:54px"></div>
+            <div class="hmb" style="left:356px;top:276px;width:82px;height:54px"></div>
+            <div class="hmb" style="left:456px;top:276px;width:90px;height:54px"></div>
+            <div class="hmb" style="left:8px;top:346px;width:46px;height:54px"></div>
+            <div class="hmb" style="left:72px;top:346px;width:70px;height:54px"></div>
+            <div class="hmb" style="left:160px;top:346px;width:78px;height:54px"></div>
+            <div class="hmb" style="left:256px;top:346px;width:82px;height:54px"></div>
+            <div class="hmb" style="left:356px;top:346px;width:82px;height:54px"></div>
+            <div class="hmb" style="left:456px;top:346px;width:90px;height:54px"></div>
+            <div class="hmb" style="left:8px;top:416px;width:46px;height:46px"></div>
+            <div class="hmb" style="left:72px;top:416px;width:70px;height:46px"></div>
+            <div class="hmb" style="left:160px;top:416px;width:78px;height:46px"></div>
+            <div class="hmb" style="left:356px;top:416px;width:82px;height:46px"></div>
+            <div class="hmb" style="left:456px;top:416px;width:90px;height:46px"></div>
+          </div>
+          <!-- SVG: route line + pins + hotspots -->
+          <svg class="hero-map-svg" viewBox="0 0 620 520" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hmPinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8B5CF6"/>
+                <stop offset="100%" stop-color="#3B82F6"/>
+              </linearGradient>
+              <linearGradient id="hmRouteGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.85"/>
+              </linearGradient>
+              <filter id="hmGlow">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <!-- main route line -->
+            <path d="M80 420 C120 370 152 310 200 268 C248 226 310 190 370 155"
+              stroke="url(#hmRouteGrad)" stroke-width="2.5" fill="none"
+              stroke-dasharray="7 7" stroke-linecap="round"/>
+            <!-- secondary route -->
+            <path d="M370 155 C420 130 470 118 530 108"
+              stroke="rgba(59,130,246,0.4)" stroke-width="1.5" fill="none"
+              stroke-dasharray="5 9" stroke-linecap="round"/>
+            <!-- faint competitor pins -->
+            <g opacity="0.35">
+              <path d="M82 420 C82 411 78 404 78 399 C78 394 80 391 82 391 C84 391 86 394 86 399 C86 404 82 411 82 420Z" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="82" cy="399" r="4" fill="rgba(255,255,255,0.5)"/>
+              <path d="M152 270 C152 261 148 254 148 249 C148 244 150 241 152 241 C154 241 156 244 156 249 C156 254 152 261 152 270Z" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="152" cy="249" r="4" fill="rgba(255,255,255,0.5)"/>
+              <path d="M532 110 C532 101 528 94 528 89 C528 84 530 81 532 81 C534 81 536 84 536 89 C536 94 532 101 532 110Z" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="532" cy="89" r="4" fill="rgba(255,255,255,0.5)"/>
+              <path d="M255 226 C255 217 251 210 251 205 C251 200 253 197 255 197 C257 197 259 200 259 205 C259 210 255 217 255 226Z" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="255" cy="205" r="4" fill="rgba(255,255,255,0.5)"/>
+              <path d="M450 310 C450 301 446 294 446 289 C446 284 448 281 450 281 C452 281 454 284 454 289 C454 294 450 301 450 310Z" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="450" cy="289" r="4" fill="rgba(255,255,255,0.5)"/>
+            </g>
+            <!-- hotspot circles (random intersections) -->
+            <circle cx="152" cy="118" r="4" fill="rgba(139,92,246,0.5)"/>
+            <circle cx="152" cy="118" r="12" fill="rgba(139,92,246,0.12)"/>
+            <circle cx="450" cy="192" r="4" fill="rgba(59,130,246,0.5)"/>
+            <circle cx="450" cy="192" r="12" fill="rgba(59,130,246,0.12)"/>
+            <circle cx="82" cy="346" r="4" fill="rgba(139,92,246,0.45)"/>
+            <circle cx="82" cy="346" r="12" fill="rgba(139,92,246,0.1)"/>
+            <!-- MAIN pin at top-right area (near phone card) -->
+            <circle class="hero-map-pin-pulse" cx="370" cy="138" r="22" fill="rgba(139,92,246,0.28)"/>
+            <path d="M370 100 C360.6 100 353 107.6 353 117 C353 129.5 370 148 370 148 C370 148 387 129.5 387 117 C387 107.6 379.4 100 370 100Z"
+              fill="url(#hmPinGrad)" filter="url(#hmGlow)"/>
+            <circle cx="370" cy="117" r="6" fill="white"/>
+          </svg>
+          <!-- fades -->
+          <div class="hero-map-fade-left"></div>
+          <div class="hero-map-fade-top"></div>
+          <div class="hero-map-fade-bottom"></div>
+        </div>
+
+        <!-- Floating stat chips -->
+        <div class="stat-chip chip-1">
+          <div class="stat-chip-label">Просмотры профиля</div>
+          <div class="stat-chip-value"><span class="stat-chip-arrow">▲</span><span class="stat-chip-num">+230%</span></div>
+        </div>
+        <div class="stat-chip chip-2">
+          <div class="stat-chip-label">Маршруты</div>
+          <div class="stat-chip-value"><span class="stat-chip-arrow">▲</span><span class="stat-chip-num">+180%</span></div>
+        </div>
+        <div class="stat-chip chip-3">
+          <div class="stat-chip-label">Звонков</div>
+          <div class="stat-chip-value"><span class="stat-chip-arrow">▲</span><span class="stat-chip-num">+70%</span></div>
+        </div>
+
+        <!-- Phone card -->
+        <div class="phone-card">
+          <div class="phone-notch"></div>
+          <div class="phone-content">
+            <div class="phone-row">
+              <div class="phone-avatar">🦷</div>
+              <div>
+                <div class="phone-biz-name">Стоматология Premium</div>
+                <div class="phone-biz-cat">Стоматологическая клиника</div>
+              </div>
+            </div>
+            <div class="phone-rating-row">
+              <span class="phone-stars">★★★★★</span>
+              <span class="phone-rating-val">5.0</span>
+              <span class="phone-rating-cnt">(298 отзывов)</span>
+            </div>
+            <div style="margin-bottom:12px"><span class="phone-badge-good">✓ Хорошее место 2025</span></div>
+            <button class="phone-cta-btn">Записаться онлайн</button>
+          </div>
+        </div>
+
+      </div><!-- /hero-right -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+═══════════════════════════════════════ -->
+<section class="section" id="why" style="position:relative;z-index:2">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Почему выбирают нас</span>
+      <h2 class="h2">Почему выбирают FlowAds</h2>
+    </div>
+    <div class="why-grid">
+      <div class="card why-card reveal" style="transition-delay:.05s">
+        <div class="why-num">🎯</div>
+        <div class="why-title">Только Яндекс.Карты</div>
+        <div class="why-desc">Мы не распыляемся на всё подряд — работаем исключительно с Яндекс.Картами и знаем этот инструмент досконально.</div>
+      </div>
+      <div class="card why-card reveal" style="transition-delay:.1s">
+        <div class="why-num">📋</div>
+        <div class="why-title">Договор и прозрачность</div>
+        <div class="why-desc">Работаем официально по договору. Фиксируем цели, сроки и зоны ответственности — никаких устных договорённостей.</div>
+      </div>
+      <div class="card why-card reveal" style="transition-delay:.15s">
+        <div class="why-num">🔍</div>
+        <div class="why-title">Бесплатный аудит карточки</div>
+        <div class="why-desc">Перед стартом разбираем вашу карточку: что мешает росту, где теряете клиентов, что можно улучшить прямо сейчас.</div>
+      </div>
+      <div class="card why-card reveal" style="transition-delay:.2s">
+        <div class="why-num">📊</div>
+        <div class="why-title">Отчётность каждую неделю</div>
+        <div class="why-desc">Присылаем еженедельные отчёты с реальными цифрами: просмотры, маршруты, звонки. Вы всегда видите за что платите.</div>
+      </div>
+      <div class="card why-card reveal" style="transition-delay:.25s">
+        <div class="why-num">💬</div>
+        <div class="why-title">Живой менеджер на связи</div>
+        <div class="why-desc">Не боты и не колл-центр. Ваш персональный менеджер отвечает в течение часа в рабочее время.</div>
+      </div>
+      <div class="card why-card reveal" style="transition-delay:.3s">
+        <div class="why-num">⚡</div>
+        <div class="why-title">Быстрый старт</div>
+        <div class="why-desc">Запускаем продвижение в течение 3 рабочих дней после подписания договора. Без затяжных онбордингов.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════ -->
+<section class="section" id="services" style="position:relative;z-index:2">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Услуги</span>
+      <h2 class="h2">Что мы делаем</h2>
+    </div>
+    <div class="services-grid">
+      <div class="card service-card reveal" style="transition-delay:.05s">
+        <div class="service-icon">📍</div>
+        <div class="service-title">SEO-продвижение на картах</div>
+        <div class="service-desc">Оптимизируем карточку под алгоритмы Яндекс.Карт и увеличиваем видимость в поиске по вашей нише.</div>
+        <div class="service-result">
+          <span class="result-label">Результат:</span>
+          <span class="result-val">Рост показов и переходов</span>
+        </div>
+      </div>
+      <div class="card service-card reveal" style="transition-delay:.1s">
+        <div class="service-icon">⭐</div>
+        <div class="service-title">Работа с отзывами</div>
+        <div class="service-desc">Повышаем рейтинг, обрабатываем негатив и наращиваем количество положительных отзывов.</div>
+        <div class="service-result">
+          <span class="result-label">Результат:</span>
+          <span class="result-val">Больше доверия и заявок</span>
+        </div>
+      </div>
+      <div class="card service-card reveal" style="transition-delay:.15s">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">Вывод в ТОП</div>
+        <div class="service-desc">Продвигаем по целевым запросам и выводим вашу карточку в топ-3 категории в вашем районе.</div>
+        <div class="service-result">
+          <span class="result-label">Результат:</span>
+          <span class="result-val">Стабильный поток клиентов</span>
+        </div>
+      </div>
+      <div class="card service-card reveal" style="transition-delay:.2s">
+        <div class="service-icon">⚙️</div>
+        <div class="service-title">Комплексное ведение</div>
+        <div class="service-desc">Полное сопровождение карточки: контент, фото, публикации, аналитика и поддержка менеджера.</div>
+        <div class="service-result">
+          <span class="result-label">Результат:</span>
+          <span class="result-val">Рост заявок и узнаваемости</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CASES
+═══════════════════════════════════════ -->
+<section class="section" id="cases" style="position:relative;z-index:2">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Кейсы</span>
+      <h2 class="h2">Кейсы и результаты</h2>
+    </div>
+    <div class="cases-grid">
+      <div class="card case-card reveal" style="transition-delay:.05s">
+        <div class="case-top">
+          <div><div class="case-name">Стоматология «Белая улыбка»</div><div class="case-before">Было 980 просмотров/мес.</div></div>
+          <div><div class="case-growth">+180%</div><div class="case-growth-label">просмотров стало</div></div>
+        </div>
+        <div class="mini-chart">
+          <div class="chart-bar" style="height:22%"></div>
+          <div class="chart-bar" style="height:28%"></div>
+          <div class="chart-bar" style="height:38%"></div>
+          <div class="chart-bar" style="height:45%"></div>
+          <div class="chart-bar" style="height:58%"></div>
+          <div class="chart-bar" style="height:75%"></div>
+          <div class="chart-bar active" style="height:100%"></div>
+        </div>
+        <div class="case-chips">
+          <div class="chip"><div class="chip-val">+65%</div><div class="chip-lbl">звонков</div></div>
+          <div class="chip"><div class="chip-val">ТОП-5</div><div class="chip-lbl">в категории</div></div>
+          <div class="chip"><div class="chip-val">3 мес.</div><div class="chip-lbl">продвижения</div></div>
+        </div>
+      </div>
+      <div class="card case-card reveal" style="transition-delay:.1s">
+        <div class="case-top">
+          <div><div class="case-name">Медцентр «Здоровье+»</div><div class="case-before">Было 1 240 просмотров/мес.</div></div>
+          <div><div class="case-growth">+150%</div><div class="case-growth-label">просмотров стало</div></div>
+        </div>
+        <div class="mini-chart">
+          <div class="chart-bar" style="height:20%"></div>
+          <div class="chart-bar" style="height:30%"></div>
+          <div class="chart-bar" style="height:36%"></div>
+          <div class="chart-bar" style="height:42%"></div>
+          <div class="chart-bar" style="height:60%"></div>
+          <div class="chart-bar" style="height:78%"></div>
+          <div class="chart-bar active" style="height:100%"></div>
+        </div>
+        <div class="case-chips">
+          <div class="chip"><div class="chip-val">+90%</div><div class="chip-lbl">звонков</div></div>
+          <div class="chip"><div class="chip-val">4.8</div><div class="chip-lbl">рейтинг</div></div>
+          <div class="chip"><div class="chip-val">4 мес.</div><div class="chip-lbl">продвижения</div></div>
+        </div>
+      </div>
+      <div class="card case-card reveal" style="transition-delay:.15s">
+        <div class="case-top">
+          <div><div class="case-name">Автосервис «МотоDrive»</div><div class="case-before">Было 640 просмотров/мес.</div></div>
+          <div><div class="case-growth">+210%</div><div class="case-growth-label">просмотров стало</div></div>
+        </div>
+        <div class="mini-chart">
+          <div class="chart-bar" style="height:16%"></div>
+          <div class="chart-bar" style="height:24%"></div>
+          <div class="chart-bar" style="height:32%"></div>
+          <div class="chart-bar" style="height:40%"></div>
+          <div class="chart-bar" style="height:55%"></div>
+          <div class="chart-bar" style="height:74%"></div>
+          <div class="chart-bar active" style="height:100%"></div>
+        </div>
+        <div class="case-chips">
+          <div class="chip"><div class="chip-val">+120%</div><div class="chip-lbl">звонков</div></div>
+          <div class="chip"><div class="chip-val">ТОП-3</div><div class="chip-lbl">в категории</div></div>
+          <div class="chip"><div class="chip-val">2 мес.</div><div class="chip-lbl">продвижения</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PRICING
+═══════════════════════════════════════ -->
+<section class="section" id="pricing" style="position:relative;z-index:2">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Тарифы</span>
+      <h2 class="h2">Выберите тариф продвижения</h2>
+    </div>
+    <div class="pricing-grid">
+      <!-- START -->
+      <div class="plan-card reveal" style="transition-delay:.05s">
+        <div>
+          <div class="plan-top"><div class="plan-name">START</div></div>
+          <div class="plan-desc" style="margin-top:8px">Продвижение 6 мес.</div>
+        </div>
+        <div class="plan-features">
+          <div class="feature-row"><div class="feature-check">✓</div>Аудит карточки</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Запуск и профессиональное оформление карточки компании в Яндекс.Бизнес</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Анализ конкурентов</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Подготовка и публикация контента для увеличения охватов и количества показов</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Управление репутацией компании и работа с отзывами клиентов</div>
+        </div>
+        <div>
+          <div class="plan-price"><span class="price-from">от</span><span class="price-val">42 000 ₽</span><span class="price-mo">/мес.</span></div>
+          <a href="#lead" class="plan-btn outline" style="margin-top:16px;display:block">Выбрать тариф</a>
+        </div>
+      </div>
+      <!-- BUSINESS -->
+      <div class="plan-card popular reveal" style="transition-delay:.1s">
+        <div>
+          <div class="plan-top">
+            <div class="plan-name">BUSINESS</div>
+            <span class="plan-popular">ПОПУЛЯРНЫЙ</span>
+          </div>
+          <div class="plan-desc" style="margin-top:8px">Продвижение 1 год.</div>
+        </div>
+        <div class="plan-features">
+          <div class="feature-row"><div class="feature-check">✓</div>Полное сопровождение карточки: управление репутацией, контентом и аналитикой</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Работа с отзывами, публикациями, витриной товаров/услуг и сторис</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Вывод в ТОП по запросам</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Регулярный анализ статистики, контроль результатов и внедрение рекомендаций</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Поддержка менеджера</div>
+        </div>
+        <div>
+          <div class="plan-price"><span class="price-from">от</span><span class="price-val">33 000 ₽</span><span class="price-mo">/мес.</span></div>
+          <a href="#lead" class="plan-btn grad" style="margin-top:16px;display:block">Выбрать тариф</a>
+        </div>
+      </div>
+      <!-- PREMIUM -->
+      <div class="plan-card reveal" style="transition-delay:.15s">
+        <div>
+          <div class="plan-top"><div class="plan-name">PREMIUM</div></div>
+          <div class="plan-desc" style="margin-top:8px">Продвижение 2 года.</div>
+        </div>
+        <div class="plan-features">
+          <div class="feature-row"><div class="feature-check">✓</div>Регулярное обновление контента, фотографий и визуального оформления</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Работа с репутацией и отзывами</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Постепенное увеличение органического трафика и количества обращений клиентов</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Контент и фотосъёмка</div>
+          <div class="feature-row"><div class="feature-check">✓</div>Приоритетная поддержка</div>
+        </div>
+        <div>
+          <div class="plan-price"><span class="price-from">от</span><span class="price-val">29 000 ₽</span><span class="price-mo">/мес.</span></div>
+          <a href="#lead" class="plan-btn outline" style="margin-top:16px;display:block">Выбрать тариф</a>
+        </div>
+      </div>
+      <!-- CUSTOM -->
+      <div class="plan-card plan-custom reveal" style="transition-delay:.2s">
+        <div>
+          <div class="plan-custom-title">Нужен индивидуальный план продвижения?</div>
+          <div class="plan-custom-desc" style="margin-top:12px">Свяжитесь с нами — подготовим персональное предложение под ваш бизнес и бюджет.</div>
+        </div>
+        <a href="#lead" class="plan-btn white">Связаться с нами</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     LEAD FORM
+═══════════════════════════════════════ -->
+<section class="section" id="lead" style="position:relative;z-index:2">
+  <div class="container">
+    <div class="lead-banner reveal">
+      <div class="lead-left">
+        <h2 class="lead-title">Получите бесплатный аудит вашей карточки Яндекс.Карт</h2>
+        <p class="lead-desc">Оставьте заявку — разберём карточку, покажем точки роста и конкурентов в вашей нише.</p>
+        <div class="lead-benefits">
+          <div class="benefit-row"><div class="benefit-dot"></div>Разберём ошибки и слабые места карточки</div>
+          <div class="benefit-row"><div class="benefit-dot"></div>Покажем точки роста и сравним с конкурентами</div>
+          <div class="benefit-row"><div class="benefit-dot"></div>Дадим персональные рекомендации по продвижению</div>
+        </div>
+      </div>
+      <div class="form-panel">
+        <div class="form-panel-title">Оставить заявку</div>
+        <div id="leadForm">
+          <div class="field">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите имя" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="consent" checked>
+            <label for="consent">Согласен на обработку персональных данных</label>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Получить аудит</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">🎉</div>
+          <div class="form-success-title">Заявка принята!</div>
+          <div class="form-success-desc">Мы свяжемся с вами в течение 30 минут.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     REVIEWS
+═══════════════════════════════════════ -->
+<!-- <section class="section" id="reviews" style="position:relative;z-index:2">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Отзывы</span>
+      <h2 class="h2">Нам доверяют</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="card review-card reveal" style="transition-delay:.05s">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Отличная работа! За 3 месяца вышли в топ-5, поток клиентов заметно вырос. Рекомендуем всем!</div>
+        <div class="review-person">
+          <div class="review-avatar">А</div>
+          <div>
+            <div class="review-name">Анна Смирнова</div>
+            <div class="review-meta">Директор · Белая улыбка</div>
+          </div>
+        </div>
+      </div>
+      <div class="card review-card reveal" style="transition-delay:.1s">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Профессиональный подход и чёткая аналитика. Виден реальный результат в цифрах уже за первый месяц.</div>
+        <div class="review-person">
+          <div class="review-avatar">А</div>
+          <div>
+            <div class="review-name">Алексей Воронов</div>
+            <div class="review-meta">Маркетолог · Здоровье+</div>
+          </div>
+        </div>
+      </div>
+      <div class="card review-card reveal" style="transition-delay:.15s">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">Команда всегда на связи, задачи выполняются вовремя. Отличные позиции в Картах, рост звонков очевиден.</div>
+        <div class="review-person">
+          <div class="review-avatar">И</div>
+          <div>
+            <div class="review-name">Ирина Петрова</div>
+            <div class="review-meta">Управляющая · МотоDrive</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="card review-card review-video reveal" style="transition-delay:.2s">
+        <div class="video-thumb">
+          <div class="play-btn">▶</div>
+        </div> -->
+        <!-- <div class="review-text">Видео-отзыв клиента</div>
+        <div class="review-person">
+          <div class="review-avatar">М</div>
+          <div>
+            <div class="review-name">Медцентр «Здоровье+»</div>
+            <div class="review-meta">О работе с FlowAds</div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer class="footer" id="contact" style="position:relative;z-index:2">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="#" class="logo" style="margin-bottom:0">
+          <div class="logo-mark">F</div>
+          <div class="logo-text">
+            <span class="logo-name">FlowAds</span>
+            <span class="logo-tagline">Продвижение в Яндекс.Картах</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">Продвижение бизнеса в Яндекс.Картах: SEO, отзывы и рост заявок.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Навигация</div>
+        <div class="footer-links">
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#pricing">Тарифы</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#reviews">Отзывы</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Информация</div>
+        <div class="footer-links">
+          <a href="#">Контакты</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Согласие на обработку данных</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Контакты</div>
+        <div class="footer-contact">
+          <span>+7 (999) 123-45-67</span>
+          <span>info@flowads.ru</span>
+          <div class="socials">
+            <a class="social-chip" href="#" title="Telegram">TG</a>
+            <a class="social-chip" href="#" title="WhatsApp">WA</a>
+            <a class="social-chip" href="#" title="ВКонтакте">VK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 FlowAds. Все права защищены.</span>
+      <div class="footer-legal">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
